@@ -32,7 +32,6 @@ The enclosure is made from MDF board. The enclosure composes of electrical contr
 To-Do: Add pictures
 ## Schematics
 ### Full Schematic
-<br/>
 
 ![CoffeBot Schematic](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot_Schematic.png)
 
