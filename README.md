@@ -43,10 +43,10 @@ To-Do: Add pictures
 <br/><br/>
 ![mBed_copy](https://github.com/praneetheddu/CoffeeBot/blob/master/mbed_copy.png)
 
+
+## Wiring
+
 ## GUI
-
-## Parts Used
-
 
 
 ## Functionality
