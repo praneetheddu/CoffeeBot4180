@@ -80,7 +80,7 @@ The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC17
 
 | Power Supply  | Connection |
 | ------------- | ------------- |
-| +12V  | Motor Driver Vin <br/> Relay Switch|
+| +12V  | Motor Driver Vin <br/> Relay Switches|
 | GND  | Motor Driver GND <br/> Peristaltic Pumps GND  |
 
 
