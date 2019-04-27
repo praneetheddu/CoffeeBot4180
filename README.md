@@ -8,7 +8,6 @@ The intent behind this project is to prepare high quality cold brew coffee with 
 1 x [Raspberry Pi Model 3 B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)<br/>
 1 x [8-channel Relay board](https://www.amazon.com/JBtek-Channel-Module-Arduino-Raspberry/dp/B00KTELP3I)<br/>
 4 x [Peristaltic pumps](https://www.amazon.com/MqbY-Dosing-Peristaltic-Aquarium-Analytical/dp/B07QB3NX8K/ref=sr_1_1?crid=191M85H2CJKWY&keywords=peristaltic+pump+12v&qid=1556389996&s=electronics&sprefix=peristalti%2Celectronics%2C139&sr=1-1)<br/>
-
 1 x [RGB LED Strip](https://www.amazon.com/NZXT-HUE-LED-Strips-Accessory/dp/B07GF4K7XB/ref=sr_1_11?keywords=LED+strip&qid=1556390046&s=electronics&sr=1-11)<br/>
 1 x [DC 12V Motor Driver](https://www.amazon.com/DROK-Controller-Regulator-Industrial-Optocoupler/dp/B06XGD5SCB?ref_=fsclp_pl_dp_8)<br/>
 1 x [Toy DC Motor Set](https://www.amazon.com/dp/B07DRGTCTP/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B07DRGTCTP&pd_rd_w=o3sgj&pf_rd_p=733540df-430d-45cd-9525-21bc15b0e6cc&pd_rd_wg=425d1&pf_rd_r=VBMDQVAQPT2Q7KMDJTNJ&pd_rd_r=b4686a1f-5186-11e9-aa3a-534f289d7dcb)<br/>
