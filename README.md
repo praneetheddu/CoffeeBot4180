@@ -32,19 +32,57 @@ The enclosure is made from MDF board. The enclosure composes of electrical contr
 To-Do: Add pictures
 ## Schematics
 ### Full Schematic
-<br/> <br/>
+<br/> 
+
 ![CoffeBot Schematic](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot_Schematic.png)
 
 ### Raspberry Pi Schematic
-<br/><br/>
+<br/>
+
 ![Raspi_copy](https://github.com/praneetheddu/CoffeeBot/blob/master/Raspi_copy.png)
 
 ### mBed Schematic
-<br/><br/>
+<br/>
+
 ![mBed_copy](https://github.com/praneetheddu/CoffeeBot/blob/master/mbed_copy.png)
 
 
-## Wiring
+## Wiring Guide
+### Raspberry Pi Setup
+The pinout for Raspberry Pi Model 3 can be found [here](https://www.raspberrypi-spy.co.uk/2014/07/raspberry-pi-b-gpio-header-details-and-pinout/)
+<br/>
+
+| Raspberry Pi  | Relay Board |
+| ------------- | ------------- |
+| +5V  | VCC  |
+| GPIO 16  | IN 1  |
+| GPIO 20  | IN 2  |
+| GPIO 21  | IN 3  |
+| GPIO 12  | IN 4  |
+| GND  | GND  |
+
+### Mbed Setup
+The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC1768/)
+<br/>
+
+| mBed  | Motor Driver |
+| ------------- | ------------- |
+| VOut  | +5V  |
+| p25  | ENA 1  |
+| p26  | ENA 2  |
+| p19 | IN 1  |
+| p20  | IN 2  |
+| p21 | IN 3  |
+| p22  | IN 4  |
+| GND  | GND  |
+
+### Power Supply Pinout
+
+| Power Supply  | Connection |
+| ------------- | ------------- |
+| +12V  | Motor Driver Vin <br/> Relay Switch|
+| GND  | Motor Driver GND <br/> Peristaltic Pumps GND  |
+
 
 ## GUI
 
