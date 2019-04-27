@@ -32,17 +32,17 @@ The enclosure is made from MDF board. The enclosure composes of electrical contr
 To-Do: Add pictures
 ## Schematics
 ### Full Schematic
-<br/> 
+<br/>
 
 ![CoffeBot Schematic](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot_Schematic.png)
 
 ### Raspberry Pi Schematic
-<br/>
+
 
 ![Raspi_copy](https://github.com/praneetheddu/CoffeeBot/blob/master/Raspi_copy.png)
 
 ### mBed Schematic
-<br/>
+
 
 ![mBed_copy](https://github.com/praneetheddu/CoffeeBot/blob/master/mbed_copy.png)
 
