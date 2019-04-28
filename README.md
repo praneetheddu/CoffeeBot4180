@@ -14,7 +14,8 @@ The intent behind this project is to prepare high quality cold brew coffee with 
 
 
 ## System Architecture
-The Architecture is divided into two sections: Motor Control and Pumping. Raspberry Pi handles the pumping while the mBed controls the Motor Driver. Raspberry Pi interfaces with the mBed serially via USB cable. A 12V/5A Power Supply supplies power to the motor dirver, perastaltic pumps, and LED strip. 
+The Architecture is divided into two sections: Motor Control and Pumping. Raspberry Pi handles the pumping while the mBed controls the Motor Driver. Raspberry Pi interfaces with the mBed serially via USB cable. A 12V/5A Power Supply supplies power to the motor dirver, perastaltic pumps, and LED strip.<br/><br/>
+
 ![SysArch Diagram](https://github.com/praneetheddu/CoffeeBot/blob/master/Untitled%20Diagram.jpg)
 
 ### Motor Control
@@ -84,8 +85,45 @@ The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC17
 
 
 ## GUI
+The GUI's are created using Adafruit IO Dashboards. There are two GUI's utilized for this project: CoffeeBot and Motor Control. 
+### CoffeBot GUI 
+![Coffee Bot GUI](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot%20Images/CoffeeBotGUI.PNG)
 
+### Motor Control GUI 
+![Motor Control GUI](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot%20Images/MotorControlGUI.PNG)
+
+The frontend for the GUI is manually designed by placing sliders, buttons, and text. Each element of the GUI is linked to a feed which is useful when writing a backend program using Python3  on Raspberry Pi. In our case, each pushbutton (CoffeeBot uses Start, Motor Control uses Up, Stop, Left, Right) sends a 1 or 0 to indicate that the user has pressed the button. For sliders (Sugar, Creamer, and Sweetner), a value between 0 and 5 is sent to the backend Python3 program. Since each element is utilized by its own feed, there is no interference between the values.
+
+**Caution: The Adafruit IO free subscription is only limited to 30 feeds per minute which means there should be a time delay of 1 sec to cycle between the feeds. Also, there are limited number of feeds and dashboards that the user can create. To ensure faster and more responsive update rate, the user can pay $9.99 subscription fee which extends the feed update rate to  60 feeds/min and unlimited dashboards and feeds.**
+
+For an in-depth Adafruit IO tutorial, Please click [here](https://learn.adafruit.com/adafruit-io/getting-started)
+
+## Raspberry Pi Backend
+Raspberry Pi recieves the values that are sent from the GUI to initiate the functionality process. There are three programs written on Raspberry Pi: CoffeeBot.py (Python), MotorControl.py (Python), RaspiToMbed.cc (C++). 
+
+**CoffeeBot.py:** The values that are received from the CoffeBot GUI are used here. The slider values control the flow rate of the liquid by tablespoon increments by turning on the relay switch. For example: 2 tablespoons of sugar turns the relay switch for 2 x one table spoon time seconds. The one table spoon time can vary between different pumps and variable voltages which can be measured and set to the appropriate time. Also, the LED strip value of 1 is passed to RaspiToMbed.cc program when the pumps are active.
+
+**MotorControl.py:** The program receives the input from Motor Control GUI and passes a value between 0 and 4 to RaspiToMbed.cc.
+
+| GUI Command  | value passed to Mbed |
+| ------------- | ------------- |
+| no button pressed  | 0  |
+| Up  | 1  |
+| Stop  | 2  |
+| Left | 3  |
+| Right | 4  |
+
+**RaspiToMbed.cc**: The values(LED Strip and Motor Control) that are updated in the python programs are passed to mBed serially. 
+
+Raspberry Pi files are available here **#TO-DO : add hyper link**
+
+## mBed Backend
+There is only one program written in mBed named CoffeeBot.cc which uses RTOS to run threads to control the motors and LED. Serial library is used to recieve the commands from Raspberry Pi.
+
+mbed filed are available here **#TO-DO : add hyper link**
 
 ## Functionality
 
 ## Demo
+
+## Improvements
