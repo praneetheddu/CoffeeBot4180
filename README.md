@@ -30,7 +30,9 @@ There is an LED strip attached to the mBed which acts as an indicator for pumpin
 ## Physical Enclosure
 The enclosure is made from MDF board. The enclosure composes of electrical control section (left panel) where the PCBs and circuit elements are mounted, dedicated liquid storage (top right section) for storing liquified sugar, creamer, and flavors, and coffee pumping  station (front right section) where the coffee and other liquids are flowing into a cup. The peristaltic pumps, mounted on the bottom panel as displayed in the image, are attached to surgical tubing routed from liquid containers to coffee cup. A funnel mount is placed above the coffee cup for filteration. Wodden support beams are placed along the edges for durabiltiy.
 
-To-Do: Add pictures
+For in-depth list of dimensions, please click [here](https://github.com/praneetheddu/CoffeeBot/blob/master/Dimensions/4180%20Final%20Measurements.pdf)
+
+**To-Do: Add pictures**
 ## Schematics
 ### Full Schematic
 
