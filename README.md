@@ -1,5 +1,5 @@
 # CoffeeBot
-
+#### Team members: <br/><br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
 ## Overview
 The intent behind this project is to prepare high quality cold brew coffee with accurate measurements with a click of a button. Hence, CoffeeBot is designed for users to customize their coffee drinks using remote assistance to save time and effort. The bot is portable and includes delivery options with interactive lighting. 
 
@@ -105,9 +105,9 @@ Raspberry Pi recieves the values that are sent from the GUI to initiate the func
 
 **MotorControl.py:** The program receives the input from Motor Control GUI and passes a value between 0 and 4 to RaspiToMbed.cc.
 
-| GUI Command  | value passed to Mbed |
+| GUI Command  | Value passed to Mbed |
 | ------------- | ------------- |
-| no button pressed  | 0  |
+| No button pressed  | 0  |
 | Up  | 1  |
 | Stop  | 2  |
 | Left | 3  |
