@@ -127,3 +127,6 @@ mbed filed are available here **#TO-DO : add hyper link**
 ## Demo
 
 ## Improvements
+1. Adding a battery that supplies enough power would be ideal to make the bot completely portable.
+2. Having more pumps and filters to add flavors 
+3. 
