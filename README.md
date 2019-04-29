@@ -129,6 +129,7 @@ mbed filed are available here **#TO-DO : add hyper link**
 ## Demo
 
 ## Improvements
-1. Adding a battery that supplies enough power would be ideal to make the bot completely portable.
-2. Having more pumps and filters to add flavors 
-3. 
+1. Having a battery that supplies enough power to run the motors and pumps
+2. More peristaltic pumps to add flavors and custom drinks
+3. Create one GUI that can support Motor Control and Pumping and add some custom drinks pushbutton
+4. Better Motors and reliable tires 
