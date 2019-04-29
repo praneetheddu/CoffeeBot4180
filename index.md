@@ -4,16 +4,15 @@
 
 ##### Table of Contents  
 [Overview](#overview)  
-[Parts List](#parts)
-
-[System Architecture](#sysarch)
-[Physical Enclosure](#physical)
-[Schematics](#schematics)
-[Wiring](#wiring)
-[GUI](#gui)
-[Back End](#backend)
-[Demo](#demo)
-[Imporovements](#improvements)
+[Parts List](#parts)<br/>
+[System Architecture](#sysarch)<br/>
+[Physical Enclosure](#physical)<br/>
+[Schematics](#schematics)<br/>
+[Wiring](#wiring)<br/>
+[GUI](#gui)<br/>
+[Back End](#backend)<br/>
+[Demo](#demo)<br/>
+[Imporovements](#improvements)<br/>
 <a name="overview"/>
 ## Overview
 The intent behind this project is to prepare high quality cold brew coffee with accurate measurements with a click of a button. Hence, CoffeeBot is designed for users to customize their coffee drinks using remote assistance to save time and effort. The bot is portable and includes delivery options with interactive lighting. 
@@ -68,6 +67,7 @@ For in-depth list of dimensions, please click [here](https://github.com/praneeth
 ![mBed_copy](/mbed_copy.png)
 
 <a name="wiring"/>
+
 ## Wiring Guide
 ### Raspberry Pi Setup
 The pinout for Raspberry Pi Model 3 can be found [here](https://www.raspberrypi-spy.co.uk/2014/07/raspberry-pi-b-gpio-header-details-and-pinout/)
@@ -105,6 +105,7 @@ The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC17
 | GND  | Motor Driver GND <br/> Peristaltic Pumps GND  |
 
 <a name="gui"/>
+
 ## GUI
 The GUI's are created using Adafruit IO Dashboards. There are two GUI's utilized for this project: CoffeeBot and Motor Control. 
 ### CoffeBot GUI 
@@ -119,6 +120,7 @@ The frontend for the GUI is manually designed by placing sliders, buttons, and t
 
 For an in-depth Adafruit IO tutorial, Please click [here](https://learn.adafruit.com/adafruit-io/getting-started)
 <a name="backend"/>
+
 ## Raspberry Pi Backend
 Raspberry Pi recieves the values that are sent from the GUI to initiate the functionality process. There are three programs written on Raspberry Pi: CoffeeBot.py (Python), MotorControl.py (Python), RaspiToMbed.cc (C++). 
 
@@ -143,8 +145,10 @@ There is only one program written in mBed named CoffeeBot.cc which uses RTOS to 
 
 mBed files are available [here](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot/main.cpp)
 <a name="demo"/>
+
 ## Demo
 <a name="improvements"/>
+
 ## Improvements
 1. Having a battery that supplies enough power to run the motors and pumps
 2. More peristaltic pumps to add flavors and custom drinks
