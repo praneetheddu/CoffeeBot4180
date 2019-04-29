@@ -46,7 +46,7 @@ For in-depth list of dimensions, please click [here](https://github.com/praneeth
 ### mBed Schematic
 
 
-![mBed_copy](https://github.com/praneetheddu/CoffeeBot/blob/master/mbed_copy.png)
+![mBed_copy](/mbed_copy.png)
 
 
 ## Wiring Guide
