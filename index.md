@@ -36,7 +36,7 @@ For in-depth list of dimensions, please click [here](https://github.com/praneeth
 ## Schematics
 ### Full Schematic
 
-![CoffeBot Schematic](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot_Schematic.png)
+![CoffeBot Schematic](/CoffeeBot_Schematic.png)
 
 ### Raspberry Pi Schematic
 
