@@ -128,7 +128,7 @@ There is only one program written in mBed named CoffeeBot.cc which uses RTOS to 
 
 mBed files are available [here](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot/main.cpp)
 ## Results
-[Demo](https://www.youtube.com/watch?v=N4auuI7kO-8&feature=youtu.be)
+[![Demo](http://i3.ytimg.com/vi/N4auuI7kO-8/hqdefault.jpg)](https://www.youtube.com/watch?v=N4auuI7kO-8&feature=youtu.be)
 ## Improvements
 1. Having a battery that supplies enough power to run the motors and pumps
 2. More peristaltic pumps to add flavors and custom drinks
