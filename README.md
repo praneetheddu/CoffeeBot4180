@@ -16,7 +16,7 @@ The intent behind this project is to prepare high quality cold brew coffee with 
 ## System Architecture
 The Architecture is divided into two sections: Motor Control and Pumping. Raspberry Pi handles the pumping while the mBed controls the Motor Driver. Raspberry Pi interfaces with the mBed serially via USB cable. A 12V/5A Power Supply supplies power to the motor dirver, perastaltic pumps, and LED strip.<br/><br/>
 
-![SysArch Diagram]({{https://praneetheddu.github.io/CoffeeBot4180/.url}}https://github.com/praneetheddu/CoffeeBot/blob/master/Untitled%20Diagram.jpg)
+![SysArch Diagram](/Untitled%20Diagram.jpg)
 
 ### Motor Control
 The mBed sends encoded signals to the Motor Driver to control the speed and direction of the motors. Since the driver is only dual channel and there are four motors, the front and back motor of each side are connected in series to both channels.
