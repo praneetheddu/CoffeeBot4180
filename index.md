@@ -1,8 +1,8 @@
 # CoffeeBot
 #### Team members: <br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
+<div style="text-align:center"><img src="images/newImage.jpg" alt="alt text" width="450" height="450">
 
-
-##### Table of Contents  
+#### Table of Contents  
 [Overview](#overview)  
 [Parts List](#parts)<br/>
 [System Architecture](#sysarch)<br/>
