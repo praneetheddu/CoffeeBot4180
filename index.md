@@ -1,8 +1,23 @@
 # CoffeeBot
 #### Team members: <br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
+
+
+##### Table of Contents  
+[Overview](#overview)  
+[Parts List](#parts)
+
+[System Architecture](#sysarch)
+[Physical Enclosure](#physical)
+[Schematics](#schematics)
+[Wiring](#wiring)
+[GUI](#gui)
+[Back End](#backend)
+[Demo](#demo)
+[Imporovements](#improvements)
+<a name="overview"/>
 ## Overview
 The intent behind this project is to prepare high quality cold brew coffee with accurate measurements with a click of a button. Hence, CoffeeBot is designed for users to customize their coffee drinks using remote assistance to save time and effort. The bot is portable and includes delivery options with interactive lighting. 
-
+<a name="parts"/><br/>
 ## Parts List:
 1 x [mBed LPC1768 microcontroller](https://os.mbed.com/platforms/mbed-LPC1768/)<br/>
 1 x [Raspberry Pi Model 3 B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)<br/>
@@ -12,6 +27,7 @@ The intent behind this project is to prepare high quality cold brew coffee with 
 1 x [DC 12V Motor Driver](https://www.amazon.com/DROK-Controller-Regulator-Industrial-Optocoupler/dp/B06XGD5SCB?ref_=fsclp_pl_dp_8)<br/>
 1 x [Toy DC Motor Set](https://www.amazon.com/dp/B07DRGTCTP/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B07DRGTCTP&pd_rd_w=o3sgj&pf_rd_p=733540df-430d-45cd-9525-21bc15b0e6cc&pd_rd_wg=425d1&pf_rd_r=VBMDQVAQPT2Q7KMDJTNJ&pd_rd_r=b4686a1f-5186-11e9-aa3a-534f289d7dcb)<br/>
 
+<a name="sysarch"/>
 
 ## System Architecture
 The Architecture is divided into two sections: Motor Control and Pumping. Raspberry Pi handles the pumping while the mBed controls the Motor Driver. Raspberry Pi interfaces with the mBed serially via USB cable. A 12V/5A Power Supply supplies power to the motor dirver, perastaltic pumps, and LED strip.<br/><br/>
@@ -27,12 +43,15 @@ The mBed sends encoded signals to the Motor Driver to control the speed and dire
 ### Added Effect
 There is an LED strip attached to the mBed which acts as an indicator for pumping status. The color changes to Red when the pumps are in Idle mode and switched to Green if the pumps are active.
 
+<a name="physical"/>
+
 ## Physical Enclosure
-The enclosure is made from MDF board. The enclosure composes of electrical control section (left panel) where the PCBs and circuit elements are mounted, dedicated liquid storage (top right section) for storing liquified sugar, creamer, and flavors, and coffee pumping  station (front right section) where the coffee and other liquids are flowing into a cup. The peristaltic pumps, mounted on the bottom panel as displayed in the image, are attached to surgical tubing routed from liquid containers to coffee cup. A funnel mount is placed above the coffee cup for filteration. Wodden support beams are placed along the edges for durabiltiy.
+The enclosure is made from MDF board. The enclosure composes of electrical control section (left panel) where the PCBs and circuit elements are mounted, dedicated liquid storage (top right section) for storing liquified sugar, creamer, and flavors, and coffee pumping  station (front right section) where the coffee and other liquids are flowing into a cup. The peristaltic pumps, mounted on the bottom panel as displayed in the image, are attached to surgical tubing routed from liquid containers to coffee cup. A funnel mount is placed above the coffee cup for filteration. Wodden support beams are placed along the edges for durabiltiy.<
 
 For in-depth list of dimensions, please click [here](https://github.com/praneetheddu/CoffeeBot/blob/master/Dimensions/4180%20Final%20Measurements.pdf)
 
 **To-Do: Add pictures**
+<a name="schematics"/>
 ## Schematics
 ### Full Schematic
 
@@ -48,7 +67,7 @@ For in-depth list of dimensions, please click [here](https://github.com/praneeth
 
 ![mBed_copy](/mbed_copy.png)
 
-
+<a name="wiring"/>
 ## Wiring Guide
 ### Raspberry Pi Setup
 The pinout for Raspberry Pi Model 3 can be found [here](https://www.raspberrypi-spy.co.uk/2014/07/raspberry-pi-b-gpio-header-details-and-pinout/)
@@ -85,7 +104,7 @@ The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC17
 | +12V  | Motor Driver Vin <br/> Relay Switches|
 | GND  | Motor Driver GND <br/> Peristaltic Pumps GND  |
 
-
+<a name="gui"/>
 ## GUI
 The GUI's are created using Adafruit IO Dashboards. There are two GUI's utilized for this project: CoffeeBot and Motor Control. 
 ### CoffeBot GUI 
@@ -99,7 +118,7 @@ The frontend for the GUI is manually designed by placing sliders, buttons, and t
 **Caution: The Adafruit IO free subscription is only limited to 30 feeds per minute which means there should be a time delay of 1 sec to cycle between the feeds. Also, there are limited number of feeds and dashboards that the user can create. To ensure faster and more responsive update rate, the user can pay $9.99 subscription fee which extends the feed update rate to  60 feeds/min and unlimited dashboards and feeds.**
 
 For an in-depth Adafruit IO tutorial, Please click [here](https://learn.adafruit.com/adafruit-io/getting-started)
-
+<a name="backend"/>
 ## Raspberry Pi Backend
 Raspberry Pi recieves the values that are sent from the GUI to initiate the functionality process. There are three programs written on Raspberry Pi: CoffeeBot.py (Python), MotorControl.py (Python), RaspiToMbed.cc (C++). 
 
@@ -123,8 +142,9 @@ Raspberry Pi files are available [here](https://github.com/praneetheddu/CoffeeBo
 There is only one program written in mBed named CoffeeBot.cc which uses RTOS to run threads to control the motors and LED. Serial library is used to recieve the commands from Raspberry Pi.
 
 mBed files are available [here](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot/main.cpp)
+<a name="demo"/>
 ## Demo
-
+<a name="improvements"/>
 ## Improvements
 1. Having a battery that supplies enough power to run the motors and pumps
 2. More peristaltic pumps to add flavors and custom drinks
