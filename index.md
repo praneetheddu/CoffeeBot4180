@@ -1,6 +1,8 @@
 # CoffeeBot 
 <div style="text-align:center"><img src="images/newImage.jpg" alt="alt text" width="450" height="450">
-
+<br/>
+  
+  
 #### Team members: <br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
 ## Overview
 The intent behind this project is to prepare high quality cold brew coffee with accurate measurements with a click of a button. Hence, CoffeeBot is designed for users to customize their coffee drinks using remote assistance to save time and effort. The bot is portable and includes delivery options with interactive lighting. 
