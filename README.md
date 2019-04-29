@@ -122,9 +122,7 @@ Raspberry Pi files are available here **#TO-DO : add hyper link**
 ## mBed Backend
 There is only one program written in mBed named CoffeeBot.cc which uses RTOS to run threads to control the motors and LED. Serial library is used to recieve the commands from Raspberry Pi.
 
-mbed filed are available here **#TO-DO : add hyper link**
-
-## Functionality
+mBed files are available here **#TO-DO : add hyper link**
 
 ## Demo
 
