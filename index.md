@@ -34,7 +34,7 @@ The enclosure is made from MDF board. The enclosure composes of electrical contr
 
 For in-depth list of dimensions, please click [here](https://github.com/praneetheddu/CoffeeBot/blob/master/Dimensions/4180%20Final%20Measurements.pdf)
 
-**To-Do: Add pictures**
+
 ## Schematics
 ### Full Schematic
 
