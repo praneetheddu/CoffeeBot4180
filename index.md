@@ -89,10 +89,10 @@ The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC17
 ## GUI
 The GUI's are created using Adafruit IO Dashboards. There are two GUI's utilized for this project: CoffeeBot and Motor Control. 
 ### CoffeBot GUI 
-![Coffee Bot GUI](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot%20Images/CoffeeBotGUI.PNG)
+![Coffee Bot GUI](/CoffeeBot%20Images/CoffeeBotGUI.PNG)
 
 ### Motor Control GUI 
-![Motor Control GUI](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot%20Images/MotorControlGUI.PNG)
+![Motor Control GUI](/CoffeeBot%20Images/MotorControlGUI.PNG)
 
 The frontend for the GUI is manually designed by placing sliders, buttons, and text. Each element of the GUI is linked to a feed which is useful when writing a backend program using Python3  on Raspberry Pi. In our case, each pushbutton (CoffeeBot uses Start, Motor Control uses Up, Stop, Left, Right) sends a 1 or 0 to indicate that the user has pressed the button. For sliders (Sugar, Creamer, and Sweetner), a value between 0 and 5 is sent to the backend Python3 program. Since each element is utilized by its own feed, there is no interference between the values.
 
