@@ -1,10 +1,6 @@
 # CoffeeBot 
 <div style="text-align:center"><img src="CoffeeBot%20Images/newImage.jpg" alt="alt text" width="450" height="450"></div><br/>
 
-  
-#### Team members: <br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
-<br/>
-
 #### Table of Contents
 [Overview](#overview)<br/>
 [Parts List](#parts)<br/>
@@ -51,7 +47,7 @@ There is an LED strip attached to the mBed which acts as an indicator for pumpin
 <a name="physicalen"/>
 
 ## Physical Enclosure
-<div style="text-align:center"><img src="images/DSCF6452.JPG" alt="alt text" width="450" height="450"></div><br/>
+<div style="text-align:center"><img src="CoffeeBot%20Images/DSCF6452.JPG" alt="alt text" width="450" height="450"></div><br/>
 The enclosure is made from MDF board. The enclosure composes of electrical control section (left panel) where the PCBs and circuit elements are mounted, dedicated liquid storage (top right section) for storing liquified sugar, creamer, and flavors, and coffee pumping  station (front right section) where the coffee and other liquids are flowing into a cup. The peristaltic pumps, mounted on the bottom panel as displayed in the image, are attached to surgical tubing routed from liquid containers to coffee cup. A funnel mount is placed above the coffee cup for filteration. Wodden support beams are placed along the edges for durabiltiy.
 
 For in-depth list of dimensions, please click [here](https://github.com/praneetheddu/CoffeeBot/blob/master/Dimensions/4180%20Final%20Measurements.pdf)
