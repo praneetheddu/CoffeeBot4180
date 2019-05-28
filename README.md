@@ -1,5 +1,5 @@
 # CoffeeBot 
-<div style="text-align:center"><img src="images/newImage.jpg" alt="alt text" width="450" height="450"></div><br/>
+<div style="text-align:center"><img src="CoffeeBot%20Images/newImage.jpg" alt="alt text" width="450" height="450"></div><br/>
 
   
 #### Team members: <br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
@@ -37,7 +37,7 @@ The intent behind this project is to prepare high quality cold brew coffee with 
 ## System Architecture
 The Architecture is divided into two sections: Motor Control and Pumping. Raspberry Pi handles the pumping while the mBed controls the Motor Driver. Raspberry Pi interfaces with the mBed serially via USB cable. A 12V/5A Power Supply supplies power to the motor dirver, perastaltic pumps, and LED strip.<br/><br/>
 
-![Schematic](/SystemArch.jpg)
+![Schematic](CoffeeBot%20Images/SystemArch.jpg)
 
 ### Motor Control
 The mBed sends encoded signals to the Motor Driver to control the speed and direction of the motors. Since the driver is only dual channel and there are four motors, the front and back motor of each side are connected in series to both channels.
@@ -61,17 +61,17 @@ For in-depth list of dimensions, please click [here](https://github.com/praneeth
 ## Schematics
 ### Full Schematic
 
-![CoffeBot Schematic](/CoffeeBot_Schematic.png)
+![CoffeBot Schematic](CoffeeBot%20Images/CoffeeBot_Schematic.png)
 
 ### Raspberry Pi Schematic
 
 
-![Raspi_copy](/Raspi_copy.png)
+![Raspi_copy](CoffeeBot%20Images/Raspi_copy.png)
 
 ### mBed Schematic
 
 
-![mBed_copy](/mbed_copy.png)
+![mBed_copy](CoffeeBot%20Images/mbed_copy.png)
 
 <a name="wiring"/>
 
@@ -116,10 +116,10 @@ The pinout for mBed can be found [here](https://os.mbed.com/platforms/mbed-LPC17
 ## GUI
 The GUI's are created using Adafruit IO Dashboards. There are two GUI's utilized for this project: CoffeeBot and Motor Control. 
 ### CoffeBot GUI 
-![Coffee Bot GUI](/CoffeeBotGUI.png)
+![Coffee Bot GUI](https://github.com/praneetheddu/CoffeeBot4180/blob/master/CoffeeBot%20Images/CoffeeBotGUI.PNG)
 
 ### Motor Control GUI 
-![Motor Control GUI](/MotorControlGUI.png)
+![Motor Control GUI](https://github.com/praneetheddu/CoffeeBot4180/blob/master/CoffeeBot%20Images/MotorControlGUI.PNG)
 
 The frontend for the GUI is manually designed by placing sliders, buttons, and text. Each element of the GUI is linked to a feed which is useful when writing a backend program using Python3  on Raspberry Pi. In our case, each pushbutton (CoffeeBot uses Start, Motor Control uses Up, Stop, Left, Right) sends a 1 or 0 to indicate that the user has pressed the button. For sliders (Sugar, Creamer, and Sweetner), a value between 0 and 5 is sent to the backend Python3 program. Since each element is utilized by its own feed, there is no interference between the values.
 
