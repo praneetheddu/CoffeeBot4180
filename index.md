@@ -1,9 +1,6 @@
 # CoffeeBot 
 <div style="text-align:center"><img src="CoffeeBot%20Images/newImage.jpg" alt="alt text" width="450" height="450"></div><br/>
 
-  
-#### Team members: <br/> Praneeth Eddu <br/> Jonathan Fernandez <br/> Zeinab Ostadabbas <br/> Jessica Hernandez
-<br/>
 
 #### Table of Contents
 [Overview](#overview)<br/>
