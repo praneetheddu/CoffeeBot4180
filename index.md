@@ -141,13 +141,13 @@ Raspberry Pi recieves the values that are sent from the GUI to initiate the func
 
 **RaspiToMbed.cc**: The values(LED Strip and Motor Control) that are updated in the python programs are passed to mBed serially. 
 
-Raspberry Pi files are available [here](https://github.com/praneetheddu/CoffeeBot/tree/master/Raspberry%20Pi%20Code)
+Raspberry Pi files are available [here](https://github.com/praneetheddu/CoffeeBot4180/tree/master/Raspberry%20Pi%20Code)
 <a name="backend"/>
 
 ## mBed Backend
 There is only one program written in mBed named CoffeeBot.cc which uses RTOS to run threads to control the motors and LED. Serial library is used to recieve the commands from Raspberry Pi.
 
-mBed files are available [here](https://github.com/praneetheddu/CoffeeBot/blob/master/CoffeeBot/main.cpp)
+mBed files are available [here](https://github.com/praneetheddu/CoffeeBot4180/tree/master/mbed%20Code)
 <a name="results"/>
 
 ## Results
